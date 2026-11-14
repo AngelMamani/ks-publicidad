@@ -7,7 +7,7 @@ export const Brand = {
     'Impresión UV, gigantografías e identidad comercial con fuerza premium.',
   Slogan: 'Impresión · Instalación · Transporte',
   Mission:
-    'Brindar soluciones gráficas de alto impacto —impresión UV, gigantografías, letras 3D, neón LED y rotulado— con calidad profesional, tiempos ágiles y acabados que potencian la imagen de cada negocio.',
+    'Ofrecer servicios de impresión digital UV, gigantografías, letras 3D, neón LED y rotulado con calidad profesional, creatividad y tiempos ágiles, impulsando la imagen de cada cliente con piezas de alto impacto visual.',
   Vision:
-    'Ser la marca referente en publicidad visual de gran formato, reconocida por su identidad potente, tecnología de producción y piezas que dominan fachadas, eventos y puntos de venta.',
+    'Ser la empresa referente en publicidad visual de gran formato, reconocida por su tecnología de producción, identidad potente y soluciones integrales de impresión, instalación y transporte a nivel local y nacional.',
 } as const

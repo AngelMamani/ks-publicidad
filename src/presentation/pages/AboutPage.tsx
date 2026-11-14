@@ -16,6 +16,26 @@ export function AboutPage() {
       </section>
 
       <section className="section section--tight">
+        <div className="container">
+          <SectionTitle
+            Eyebrow="Nuestra esencia"
+            Title="Misión y visión"
+            Description="Los pilares que guían cada proyecto de KS Gigantografías."
+          />
+          <div className="info-grid mission-vision">
+            <article className="info-panel info-panel--featured">
+              <h3>Misión</h3>
+              <p>{Brand.Mission}</p>
+            </article>
+            <article className="info-panel info-panel--featured">
+              <h3>Visión</h3>
+              <p>{Brand.Vision}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container about-layout">
           <div className="about-copy">
             <p>
@@ -45,28 +65,6 @@ export function AboutPage() {
           </div>
           <div className="about-visual">
             <img src={AssetPaths.Productos.TallerKsProduccion} alt="Taller KS Gigantografías" />
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionTitle
-            Eyebrow="Identidad KS"
-            Title="Misión y visión"
-            Description="La brújula con la que fabricamos cada pieza publicitaria."
-          />
-          <div className="info-grid mission-vision">
-            <article className="info-panel info-panel--featured">
-              <span className="section-title__eyebrow">Misión</span>
-              <h3>Lo que hacemos cada día</h3>
-              <p>{Brand.Mission}</p>
-            </article>
-            <article className="info-panel info-panel--featured">
-              <span className="section-title__eyebrow">Visión</span>
-              <h3>A dónde vamos</h3>
-              <p>{Brand.Vision}</p>
-            </article>
           </div>
         </div>
       </section>

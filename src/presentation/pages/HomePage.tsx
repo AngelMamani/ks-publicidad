@@ -29,6 +29,26 @@ export function HomePage() {
       <section className="section">
         <div className="container">
           <SectionTitle
+            Eyebrow="Nuestra esencia"
+            Title="Misión y visión"
+            Description="La identidad que impulsa cada proyecto de KS."
+          />
+          <div className="info-grid mission-vision">
+            <article className="info-panel info-panel--featured">
+              <h3>Misión</h3>
+              <p>{Brand.Mission}</p>
+            </article>
+            <article className="info-panel info-panel--featured">
+              <h3>Visión</h3>
+              <p>{Brand.Vision}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionTitle
             Eyebrow="Potencia visual"
             Title="Servicios con fuerza de marca"
             Description="Soluciones de impresión y señalética para que tu negocio se vea imponente."
