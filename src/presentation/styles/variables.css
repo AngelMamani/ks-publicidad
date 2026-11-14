@@ -1,0 +1,46 @@
+:root {
+  --ks-black: #050505;
+  --ks-ink: #0c0c0c;
+  --ks-graphite: #161616;
+  --ks-steel: #2a2a2a;
+  --ks-mist: #cfcfcf;
+  --ks-white: #f7f4ee;
+  --ks-gold: #d4af37;
+  --ks-gold-bright: #f0d06a;
+  --ks-gold-deep: #8a6a1f;
+  --ks-magenta: #ff2d95;
+  --ks-cyan: #2de2ff;
+  --ks-fire: #ff5a1f;
+
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+
+  --radius-sharp: 2px;
+  --space-section: clamp(4rem, 8vw, 7rem);
+  --header-height: 5rem;
+  --max-width: 1180px;
+
+  --shadow-gold: 0 0 0 1px color-mix(in srgb, var(--ks-gold) 35%, transparent);
+  --claw-gradient: linear-gradient(
+    135deg,
+    var(--ks-gold-bright) 0%,
+    var(--ks-gold) 42%,
+    var(--ks-gold-deep) 100%
+  );
+  --night-gradient: radial-gradient(
+      ellipse at 15% 10%,
+      color-mix(in srgb, var(--ks-gold) 18%, transparent),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 85% 0%,
+      color-mix(in srgb, var(--ks-magenta) 14%, transparent),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 70% 80%,
+      color-mix(in srgb, var(--ks-cyan) 10%, transparent),
+      transparent 45%
+    ),
+    linear-gradient(180deg, var(--ks-black), var(--ks-ink) 55%, #090909);
+}

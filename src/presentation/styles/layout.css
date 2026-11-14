@@ -1,0 +1,246 @@
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid color-mix(in srgb, var(--ks-gold) 28%, transparent);
+  background: color-mix(in srgb, var(--ks-black) 88%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.site-header__inner {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-link img {
+  height: 3.1rem;
+  width: auto;
+}
+
+.brand-link__text {
+  display: none;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.brand-link__text strong {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--ks-gold-bright);
+}
+
+.brand-link__text span {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ks-mist);
+}
+
+.nav-desktop {
+  display: none;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.55rem 0.7rem;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--ks-mist);
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: 0.2rem;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--claw-gradient);
+  transition: transform 0.28s ease;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: var(--ks-white);
+}
+
+.nav-link:hover::after,
+.nav-link.is-active::after {
+  transform: scaleX(1);
+}
+
+.menu-toggle {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid color-mix(in srgb, var(--ks-gold) 45%, transparent);
+  background: transparent;
+  color: var(--ks-gold);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 82% 100%, 0 100%);
+}
+
+.menu-toggle span,
+.menu-toggle span::before,
+.menu-toggle span::after {
+  display: block;
+  width: 1.15rem;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.menu-toggle span::before {
+  top: -6px;
+}
+
+.menu-toggle span::after {
+  top: 6px;
+}
+
+.nav-mobile {
+  position: fixed;
+  inset: var(--header-height) 0 auto 0;
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.25rem 1.4rem;
+  background: color-mix(in srgb, var(--ks-ink) 96%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--ks-gold) 25%, transparent);
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.nav-mobile.is-open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-mobile .nav-link {
+  font-size: 0.85rem;
+  padding: 0.85rem 0.4rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--ks-gold) 12%, transparent);
+}
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid color-mix(in srgb, var(--ks-gold) 25%, transparent);
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      color-mix(in srgb, var(--ks-gold) 6%, transparent)
+    ),
+    var(--ks-ink);
+  padding: 3rem 0 1.5rem;
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.site-footer__brand img {
+  width: 4.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.site-footer h3 {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--ks-gold);
+  margin-bottom: 0.85rem;
+}
+
+.site-footer p,
+.site-footer a,
+.site-footer li {
+  color: var(--ks-mist);
+  font-size: 0.98rem;
+}
+
+.site-footer__links,
+.site-footer__contact {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.site-footer__bottom {
+  margin-top: 2.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--ks-gold) 15%, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  color: color-mix(in srgb, var(--ks-mist) 75%, transparent);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  .brand-link__text {
+    display: flex;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+  .menu-toggle,
+  .nav-mobile {
+    display: none;
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}

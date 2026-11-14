@@ -1,0 +1,136 @@
+.section {
+  padding: var(--space-section) 0;
+}
+
+.section--tight {
+  padding-top: 2.5rem;
+}
+
+.home-strip {
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--ks-gold) 25%, transparent);
+  background: color-mix(in srgb, var(--ks-graphite) 70%, transparent);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 96% 100%, 0 100%);
+  animation: claw-sweep 0.8s ease both;
+}
+
+.home-strip strong {
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--ks-gold-bright);
+}
+
+.home-strip p {
+  color: var(--ks-mist);
+}
+
+.home-preview {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.home-cta-band {
+  margin-top: 2.5rem;
+  padding: 2rem 1.4rem;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  background:
+    linear-gradient(
+      120deg,
+      color-mix(in srgb, var(--ks-magenta) 16%, transparent),
+      color-mix(in srgb, var(--ks-gold) 12%, transparent) 45%,
+      color-mix(in srgb, var(--ks-cyan) 12%, transparent)
+    ),
+    var(--ks-graphite);
+  border: 1px solid color-mix(in srgb, var(--ks-gold) 28%, transparent);
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 94% 100%, 0 100%);
+}
+
+.home-cta-band h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.about-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-copy {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.about-copy p {
+  color: var(--ks-mist);
+  font-size: 1.08rem;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.about-stats article {
+  padding: 1rem 0.8rem;
+  background: color-mix(in srgb, var(--ks-black) 55%, transparent);
+  border-left: 2px solid var(--ks-gold);
+}
+
+.about-stats strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--ks-gold-bright);
+}
+
+.about-stats span {
+  font-size: 0.85rem;
+  color: var(--ks-mist);
+  letter-spacing: 0.04em;
+}
+
+.contact-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.section-cta {
+  margin-top: 2.5rem;
+}
+
+.stack-gap {
+  margin-top: 1rem;
+}
+
+@media (min-width: 900px) {
+  .home-strip {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .home-preview {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+
+  .home-cta-band {
+    grid-template-columns: 1fr auto;
+    padding: 2.2rem 2rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: stretch;
+  }
+
+  .contact-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
