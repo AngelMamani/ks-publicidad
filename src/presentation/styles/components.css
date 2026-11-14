@@ -187,11 +187,54 @@
     background 0.3s ease;
 }
 
+.catalog-card,
+.portfolio-card {
+  padding: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.media-card__image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--ks-black);
+}
+
+.media-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.media-card__body {
+  padding: 1.15rem 1.2rem 1.35rem;
+}
+
 .service-card:hover,
 .catalog-card:hover,
 .portfolio-card:hover {
   transform: translateY(-4px);
   border-color: color-mix(in srgb, var(--ks-gold) 55%, transparent);
+}
+
+.catalog-card:hover .media-card__image img,
+.portfolio-card:hover .media-card__image img {
+  transform: scale(1.05);
+}
+
+.info-panel--featured {
+  min-height: 100%;
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.info-panel--featured h3 {
+  font-size: 1.15rem;
+  color: var(--ks-gold-bright);
 }
 
 .service-card__highlight,

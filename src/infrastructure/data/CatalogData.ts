@@ -1,46 +1,77 @@
 import type { CatalogItem } from '@domain/entities/CatalogItem'
+import { AssetPaths } from '@infrastructure/assets/AssetPaths'
 
 export const CatalogData: readonly CatalogItem[] = [
   {
-    Id: 'roll-screen',
-    Name: 'Roll Screen Premium',
-    Category: 'Displays',
-    Description: 'Estructura de aluminio con impresión full color para stands y ferias.',
-    Specs: '1.0 × 2.0 m',
-  },
-  {
-    Id: 'banner-mesh',
-    Name: 'Banner Mesh Exterior',
-    Category: 'Gigantografías',
-    Description: 'Lona perforada resistente al viento, ideal para fachadas y vallas.',
-    Specs: 'Hasta 5 × 12 m',
-  },
-  {
-    Id: 'caja-luz',
-    Name: 'Caja Luminosa',
+    Id: 'letreros-3d',
+    Name: 'Letreros luminosos 3D',
     Category: 'Señalética',
-    Description: 'Caja de luz con impresión backlit y marco metálico de alta precisión.',
-    Specs: 'Medidas a medida',
+    Description:
+      'Paneles con letras corpóreas iluminadas para gimnasios, locales y marcas de alto impacto.',
+    Specs: 'LED interior · Medidas a medida',
+    Image: AssetPaths.Productos.LetreroTaurusGym,
   },
   {
-    Id: 'letras-3d',
-    Name: 'Letras 3D Iluminadas',
-    Category: 'Acrílico',
-    Description: 'Letras corpóreas con iluminación LED frontal o trasera.',
-    Specs: 'Espesor 3–10 cm',
+    Id: 'letras-volumetricas',
+    Name: 'Letras volumétricas',
+    Category: 'Acrílico / PVC',
+    Description:
+      'Letras corpóreas de gran tamaño para eventos, ferias y ambientaciones comerciales.',
+    Specs: 'Piso o muro · Colores personalizados',
+    Image: AssetPaths.Productos.LetrasVolumetricasExpo,
   },
   {
-    Id: 'vinilo',
-    Name: 'Vinilo Adhesivo',
-    Category: 'Rotulado',
-    Description: 'Impresión y corte para vitrinas, paredes y flotas vehiculares.',
-    Specs: 'Brillo / Mate',
+    Id: 'caja-luminosa',
+    Name: 'Cajas luminosas',
+    Category: 'Iluminación',
+    Description:
+      'Cajas de luz circulares o rectangulares con acabado premium para discotecas y locales.',
+    Specs: 'Backlit LED · Diseño a medida',
+    Image: AssetPaths.Productos.CajaLuminosaDiscoBar,
   },
   {
-    Id: 'backing',
-    Name: 'Backing Corporativo',
-    Category: 'Eventos',
-    Description: 'Fondo publicitario modular para prensa, lanzamientos y activaciones.',
-    Specs: '3 × 2.3 m',
+    Id: 'letreros-boutique',
+    Name: 'Letreros boutique',
+    Category: 'Comercial',
+    Description:
+      'Señalética elegante con tipografía 3D, iconografía y barra de contacto luminosa.',
+    Specs: 'Relieve + iluminación',
+    Image: AssetPaths.Productos.LetreroGlowyBoutique,
+  },
+  {
+    Id: 'neon-led',
+    Name: 'Neón LED personalizado',
+    Category: 'Neón',
+    Description:
+      'Figuras y tipografías en neón LED flexible sobre acrílico, ideal para interiores.',
+    Specs: 'Bajo consumo · Colores vivos',
+    Image: AssetPaths.Productos.NeonLedPersonalizado,
+  },
+  {
+    Id: 'letreros-luminosos',
+    Name: 'Letreros luminosos full color',
+    Category: 'Señalética',
+    Description:
+      'Piezas iluminadas con degradados, logos y presencia nocturna de alto contraste.',
+    Specs: 'Backlit · Fachada / interior',
+    Image: AssetPaths.Productos.LetreroLuminosoGlowy,
+  },
+  {
+    Id: 'gigantografias',
+    Name: 'Gigantografías y banners',
+    Category: 'Gran formato',
+    Description:
+      'Lonas y banners full color para campañas, bares, eventos y publicidad exterior.',
+    Specs: 'Vinilo / lona · Alta resolución',
+    Image: AssetPaths.Productos.BannerBarElSecreto,
+  },
+  {
+    Id: 'impresion-uv',
+    Name: 'Impresión de gran formato',
+    Category: 'Producción',
+    Description:
+      'Impresión industrial en plotter para tirajes publicitarios con color intenso y detalle.',
+    Specs: 'Plotter profesional · Stock de materiales',
+    Image: AssetPaths.Productos.ImpresionGranFormato,
   },
 ]

@@ -3,4 +3,5 @@ export interface PortfolioItem {
   readonly Title: string
   readonly Category: string
   readonly Description: string
+  readonly Image: string
 }

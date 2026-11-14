@@ -44,27 +44,30 @@ export function AboutPage() {
             </div>
           </div>
           <div className="about-visual">
-            <img src={AssetPaths.BannerImage} alt="Fachada y taller KS" />
+            <img src={AssetPaths.Productos.TallerKsProduccion} alt="Taller KS Gigantografías" />
           </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container info-grid">
-          <article className="info-panel">
-            <h3>Misión</h3>
-            <p>
-              Diseñar e imprimir soluciones publicitarias que elevan la presencia de cada
-              cliente con calidad, velocidad y fuerza visual.
-            </p>
-          </article>
-          <article className="info-panel">
-            <h3>Visión</h3>
-            <p>
-              Ser la referencia en gigantografías y gráfica comercial con una identidad
-              futurista, animalista y profesional.
-            </p>
-          </article>
+        <div className="container">
+          <SectionTitle
+            Eyebrow="Identidad KS"
+            Title="Misión y visión"
+            Description="La brújula con la que fabricamos cada pieza publicitaria."
+          />
+          <div className="info-grid mission-vision">
+            <article className="info-panel info-panel--featured">
+              <span className="section-title__eyebrow">Misión</span>
+              <h3>Lo que hacemos cada día</h3>
+              <p>{Brand.Mission}</p>
+            </article>
+            <article className="info-panel info-panel--featured">
+              <span className="section-title__eyebrow">Visión</span>
+              <h3>A dónde vamos</h3>
+              <p>{Brand.Vision}</p>
+            </article>
+          </div>
         </div>
       </section>
     </>

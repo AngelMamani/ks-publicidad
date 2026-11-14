@@ -52,7 +52,7 @@ export function HomePage() {
             <CtaButton To="/portafolio">Ver portafolio</CtaButton>
           </div>
           <div className="about-visual">
-            <img src={AssetPaths.BannerImage} alt="Local KS Gigantografías" />
+            <img src={AssetPaths.Productos.TallerKsProduccion} alt="Taller KS Gigantografías" />
           </div>
         </div>
       </section>

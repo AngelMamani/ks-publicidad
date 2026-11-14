@@ -4,4 +4,5 @@ export interface CatalogItem {
   readonly Category: string
   readonly Description: string
   readonly Specs: string
+  readonly Image: string
 }

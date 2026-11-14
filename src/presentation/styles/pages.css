@@ -101,6 +101,10 @@
   gap: 1.25rem;
 }
 
+.mission-vision {
+  align-items: stretch;
+}
+
 .section-cta {
   margin-top: 2.5rem;
 }
