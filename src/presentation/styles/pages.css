@@ -101,6 +101,43 @@
   gap: 1.25rem;
 }
 
+.contact-simple {
+  max-width: 28rem;
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem 1.4rem;
+  background: color-mix(in srgb, var(--ks-graphite) 88%, black);
+  border: 1px solid color-mix(in srgb, var(--ks-gold) 28%, transparent);
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 94% 100%, 0 100%);
+}
+
+.contact-simple h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ks-gold-bright);
+}
+
+.contact-simple__address {
+  color: var(--ks-mist);
+}
+
+.contact-simple__phones {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.contact-simple__phones a {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  letter-spacing: 0.08em;
+  color: var(--ks-white);
+}
+
+.contact-simple__phones a:hover {
+  color: var(--ks-gold-bright);
+}
+
 .mission-vision {
   align-items: stretch;
 }

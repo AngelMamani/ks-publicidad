@@ -40,8 +40,8 @@ export function AboutPage() {
           <div className="about-copy">
             <p>
               En {Brand.Name} convertimos ideas en piezas de gran formato. Combinamos
-              impresión digital UV, señalética 3D y rotulado profesional para marcas que
-              necesitan destacarse.
+              impresión de alta calidad, señalética 3D y rotulado profesional para marcas
+              que necesitan destacarse.
             </p>
             <p>
               Nuestro estilo nace de una identidad fuerte: corona, metal y energía. Cada
@@ -50,8 +50,8 @@ export function AboutPage() {
             </p>
             <div className="about-stats">
               <article>
-                <strong>UV</strong>
-                <span>Impresión avanzada</span>
+                <strong>HQ</strong>
+                <span>Alta calidad</span>
               </article>
               <article>
                 <strong>3D</strong>

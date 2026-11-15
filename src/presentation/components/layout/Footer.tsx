@@ -14,7 +14,9 @@ export function Footer() {
         <div className="site-footer__brand">
           <img src={AssetPaths.LogoMark} alt={Brand.Name} />
           <h3>{Brand.Name}</h3>
-          <p>{Brand.Tagline}. {Brand.Slogan}.</p>
+          <p>
+            {Brand.Tagline}. {Brand.Slogan}.
+          </p>
         </div>
 
         <div>
@@ -36,21 +38,15 @@ export function Footer() {
                 <a href={`tel:${Phone.replace(/\s/g, '')}`}>{Phone}</a>
               </li>
             ))}
-            {Info ? (
-              <>
-                <li>
-                  <a href={`mailto:${Info.Email}`}>{Info.Email}</a>
-                </li>
-                <li>{Info.Address}</li>
-                <li>{Info.Schedule}</li>
-              </>
-            ) : null}
+            {Info ? <li>{Info.Address}</li> : null}
           </ul>
         </div>
       </div>
 
       <div className="container site-footer__bottom">
-        <span>© {new Date().getFullYear()} {Brand.Name}</span>
+        <span>
+          © {new Date().getFullYear()} {Brand.Name}
+        </span>
         <span>Publicidad de alto impacto</span>
       </div>
     </footer>

@@ -9,8 +9,8 @@ export class SubmitContactMessage {
   }
 
   async Execute(Message: ContactMessage): Promise<void> {
-    if (!Message.Name.trim() || !Message.Email.trim() || !Message.Message.trim()) {
-      throw new Error('Completa nombre, correo y mensaje para enviar tu solicitud.')
+    if (!Message.Name.trim() || !Message.Message.trim()) {
+      throw new Error('Completa nombre y mensaje para enviar tu solicitud.')
     }
 
     await this.ContactRepository.SubmitMessage(Message)

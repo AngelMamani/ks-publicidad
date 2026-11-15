@@ -2,18 +2,18 @@ import type { Service } from '@domain/entities/Service'
 
 export const ServicesData: readonly Service[] = [
   {
-    Id: 'uv',
-    Title: 'Impresión Digital UV',
-    Description:
-      'Tintas UV de alta resistencia para interiores y exteriores, con color intenso y acabado profesional.',
-    Highlight: 'Durabilidad extrema',
-  },
-  {
     Id: 'giganto',
     Title: 'Gigantografías',
     Description:
       'Banners, lonas y paneles de gran formato para campañas, fachadas y activaciones de alto impacto.',
     Highlight: 'Gran formato',
+  },
+  {
+    Id: 'alta-calidad',
+    Title: 'Impresión de alta calidad',
+    Description:
+      'Impresión full color con detalle nítido y acabado profesional para interiores y exteriores.',
+    Highlight: 'Alta resolución',
   },
   {
     Id: 'acrilico',

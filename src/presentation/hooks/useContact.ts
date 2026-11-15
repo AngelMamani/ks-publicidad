@@ -34,7 +34,7 @@ export function useContact() {
 
     try {
       await Container.SubmitContactMessage.Execute(Message)
-      setStatus('Abrimos tu correo para enviar la solicitud a KS.')
+      setStatus('Abrimos WhatsApp para enviar tu solicitud a KS.')
     } catch (ErrorValue) {
       setHasError(true)
       setStatus(

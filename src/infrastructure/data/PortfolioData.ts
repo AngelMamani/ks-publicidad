@@ -17,18 +17,11 @@ export const PortfolioData: readonly PortfolioItem[] = [
     Image: AssetPaths.Productos.LetrasVolumetricasExpo,
   },
   {
-    Id: 'sotano-disco',
-    Title: 'El Sótano Disco Bar',
-    Category: 'Caja luminosa',
-    Description: 'Caja de luz circular con tipografía nocturna de alto contraste.',
-    Image: AssetPaths.Productos.CajaLuminosaDiscoBar,
-  },
-  {
-    Id: 'glowy-boutique',
-    Title: 'Glowy Boutique',
-    Category: 'Señalética comercial',
-    Description: 'Letrero boutique con relieve, filigrana e iluminación de marca.',
-    Image: AssetPaths.Productos.LetreroGlowyBoutique,
+    Id: 'minimarket-lis',
+    Title: 'Minimarket Lis',
+    Category: 'Letrero luminoso',
+    Description: 'Cajón luminoso full color para carnicería y minimarket.',
+    Image: AssetPaths.Productos.LetreroMinimarketLis,
   },
   {
     Id: 'neon-dino',
@@ -36,6 +29,13 @@ export const PortfolioData: readonly PortfolioItem[] = [
     Category: 'Neón LED',
     Description: 'Neón LED tipográfico y figura animalista sobre acrílico.',
     Image: AssetPaths.Productos.NeonLedPersonalizado,
+  },
+  {
+    Id: 'giganto-alta-calidad',
+    Title: 'Impresión de gran formato',
+    Category: 'Gigantografía',
+    Description: 'Producción de banners full color en plotter de alta resolución.',
+    Image: AssetPaths.Productos.GigantografiaAltaCalidad,
   },
   {
     Id: 'bar-secreto',

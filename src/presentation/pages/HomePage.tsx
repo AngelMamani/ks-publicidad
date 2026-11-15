@@ -19,8 +19,8 @@ export function HomePage() {
           <div className="home-strip">
             <strong>{Brand.Slogan}</strong>
             <p>
-              Producción gráfica para campañas de gran alcance: diseño, impresión UV,
-              montaje y logística con identidad premium.
+              Producción gráfica para campañas de gran alcance: diseño, impresión de alta
+              calidad, montaje y logística con identidad premium.
             </p>
           </div>
         </div>

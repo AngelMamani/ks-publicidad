@@ -21,22 +21,13 @@ export const CatalogData: readonly CatalogItem[] = [
     Image: AssetPaths.Productos.LetrasVolumetricasExpo,
   },
   {
-    Id: 'caja-luminosa',
-    Name: 'Cajas luminosas',
+    Id: 'letreros-luminosos',
+    Name: 'Letreros luminosos',
     Category: 'Iluminación',
     Description:
-      'Cajas de luz circulares o rectangulares con acabado premium para discotecas y locales.',
+      'Cajones luminosos full color para minimarkets, locales y fachadas con iluminación LED.',
     Specs: 'Backlit LED · Diseño a medida',
-    Image: AssetPaths.Productos.CajaLuminosaDiscoBar,
-  },
-  {
-    Id: 'letreros-boutique',
-    Name: 'Letreros boutique',
-    Category: 'Comercial',
-    Description:
-      'Señalética elegante con tipografía 3D, iconografía y barra de contacto luminosa.',
-    Specs: 'Relieve + iluminación',
-    Image: AssetPaths.Productos.LetreroGlowyBoutique,
+    Image: AssetPaths.Productos.LetreroMinimarketLis,
   },
   {
     Id: 'neon-led',
@@ -48,26 +39,17 @@ export const CatalogData: readonly CatalogItem[] = [
     Image: AssetPaths.Productos.NeonLedPersonalizado,
   },
   {
-    Id: 'letreros-luminosos',
-    Name: 'Letreros luminosos full color',
-    Category: 'Señalética',
-    Description:
-      'Piezas iluminadas con degradados, logos y presencia nocturna de alto contraste.',
-    Specs: 'Backlit · Fachada / interior',
-    Image: AssetPaths.Productos.LetreroLuminosoGlowy,
-  },
-  {
     Id: 'gigantografias',
     Name: 'Gigantografías y banners',
     Category: 'Gran formato',
     Description:
       'Lonas y banners full color para campañas, bares, eventos y publicidad exterior.',
     Specs: 'Vinilo / lona · Alta resolución',
-    Image: AssetPaths.Productos.BannerBarElSecreto,
+    Image: AssetPaths.Productos.GigantografiaAltaCalidad,
   },
   {
-    Id: 'impresion-uv',
-    Name: 'Impresión de gran formato',
+    Id: 'impresion-alta-calidad',
+    Name: 'Impresión de alta calidad',
     Category: 'Producción',
     Description:
       'Impresión industrial en plotter para tirajes publicitarios con color intenso y detalle.',

@@ -13,7 +13,7 @@ export function PortfolioPage() {
           <SectionTitle
             Eyebrow="Portafolio"
             Title="Trabajos con presencia de rey"
-            Description="Proyectos de fachada, evento, rotulado e impresión UV con identidad KS."
+            Description="Proyectos de fachada, evento, rotulado e impresión de alta calidad con identidad KS."
           />
         </div>
       </section>

@@ -8,18 +8,18 @@ export class ContactRepository implements IContactRepository {
   }
 
   async SubmitMessage(Message: ContactMessage): Promise<void> {
-    const Subject = encodeURIComponent(`Consulta KS · ${Message.Service || 'General'}`)
-    const Body = encodeURIComponent(
-      [
-        `Nombre: ${Message.Name}`,
-        `Correo: ${Message.Email}`,
-        `Teléfono: ${Message.Phone || 'No indicado'}`,
-        `Servicio: ${Message.Service || 'General'}`,
-        '',
-        Message.Message,
-      ].join('\n'),
-    )
+    const Text = [
+      `Hola KS, soy ${Message.Name}.`,
+      `Teléfono: ${Message.Phone || 'No indicado'}`,
+      `Servicio: ${Message.Service || 'General'}`,
+      '',
+      Message.Message,
+    ].join('\n')
 
-    window.location.href = `mailto:${ContactData.Email}?subject=${Subject}&body=${Body}`
+    window.open(
+      `https://wa.me/${ContactData.WhatsApp}?text=${encodeURIComponent(Text)}`,
+      '_blank',
+      'noopener,noreferrer',
+    )
   }
 }
